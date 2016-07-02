@@ -1,0 +1,105 @@
+#banner {
+	height: 10vw;
+	min-height: 70px;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #444;
+	z-index: 100;
+	overflow: hidden;
+}
+
+#banner > #left {
+	height: 100%;
+	display: table;
+	padding: 1%;
+}
+
+#banner > #left > p {
+	font-size: 2em; 
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#banner > #mobileRight {
+	display: table;
+	height: 100%;
+}
+
+#banner > #mobileRight > i {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+}
+
+#banner > #right {
+	height: 100%;
+}
+
+#banner > #right > .link {
+	text-align: center;
+	height: 100%;
+	display: table;
+}
+
+#banner > #right > .link > p {
+	color: white;
+	display: inline-block;
+	font-family: Avenir;
+	font-size: 1.6em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#banner > #right > .link > p:hover {
+	color: #aaa;
+	cursor: pointer;
+}
+
+#cover {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../img/desksm.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 15%;
+}
+
+#wrap {
+	width: 60%;
+	margin: 0 20%;
+	display: inline-block;
+}
+
+#list {
+	display: inline-block;
+	max-height: inherit;
+	border-right: solid 2px black;
+	text-align: right;
+}
+
+#list h1 {
+	font-size: 5em;
+}
+
+#wrap > #intro {
+	overflow: scroll;
+}
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 600px) {
+	#list {
+		border-right: solid 0px black;
+		text-align: center;
+	}
+
+	#wrap > #intro {
+		overflow: auto;
+	}
+
+}
+
